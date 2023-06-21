@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>2.6 JS arrow functions assignment</title>
+</head>
+
+<body>
+    <h2 style="text-align: left">Solving Quadratic Equations of the form:</h2>
+    <h2 style="color: red;";>ax^2 + bx + c = 0</h2>
+    <h3>Please enter 3 numbers for the coefficients: a, b and c:</h3>
+
+    <!-- <get the input coeffs> -->
+    <span>
+      <label for="inp1" style="font-size: 20px";>a:</label>
+      <input type="text" id="inp1" name="inp1";>
+      <label for="inp2" style="font-size: 20px";>b:</label>
+      <input type="text" id="inp2" name="inp2";>
+      <label for="inp3" style="font-size: 20px";>c:</label>
+      <input type="text" id="inp3" name="inp3";>
+    </span>
+
+    <div>
+        <br>
+        <input class ="button" value="Submit" onclick = "numbersCheck()">
+        <p style="color:red; font-size:22px" id = "warn"></p>
+        <h3>Your equation is:</h3>
+        <p style="color:red; font-size:25px; text-align: center" id = "eqn"></p>
+    </div>
+    <div>
+        <h3>The outcome is:</h3>
+        <p id = "roots" style="text-align: center"></p>
+    </div>
+    <br>
+    <input class ="button" style="width: 200px" value="Click me to try again" onclick = "location.reload()"/>
+
+    <script src = "quad.js"></script>
+</body>
+
+</html>
